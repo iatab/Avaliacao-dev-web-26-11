@@ -74,6 +74,13 @@ public class TreinoService {
         return t;
     }
 
+
+
+    public Optional<Treino> buscarTreinoPorStatus(String status) {
+           Optional<Treino> t = treinoRepository.findByStatus(status);
+           return t;
+    }
+
 }
 
 
